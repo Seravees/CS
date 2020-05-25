@@ -1,111 +1,69 @@
 function post() {
 
 	var temp1 = document.createElement("form");
-	url = 'post';
+	url = 'QuestionnaireCz';
 	temp1.target = "_self";
 	temp1.action = url;
 	temp1.method = "post";
 
-	var name = $('#name').val();
+	var Enterprise = $('#Enterprise').val();
 	var opt = document.createElement("textarea");
-	opt.name = 'name';
-	opt.value = name;
+	opt.name = 'Enterprise';
+	opt.value = Enterprise;
 	temp1.appendChild(opt);
 
-	var ID = $('#ID').val();
+	var Name = $('#Name').val();
 	var opt = document.createElement("textarea");
-	opt.name = 'ID';
-	opt.value = ID;
+	opt.name = 'Name';
+	opt.value = Name;
 	temp1.appendChild(opt);
 
-	var address = $('#address').val();
+	var Tel = $('#Tel').val();
 	var opt = document.createElement("textarea");
-	opt.name = 'address';
-	opt.value = address;
+	opt.name = 'Tel';
+	opt.value = Tel;
 	temp1.appendChild(opt);
 
-	var tel = $('#tel').val();
+	var Attitude = $("input[name='Attitude']:checked").val();
 	var opt = document.createElement("textarea");
-	opt.name = 'tel';
-	opt.value = tel;
+	opt.name = 'Attitude';
+	opt.value = Attitude;
 	temp1.appendChild(opt);
 
-	var city = $('#city').val();
+	var Correctness = $("input[name='Correctness']:checked").val();
 	var opt = document.createElement("textarea");
-	opt.name = 'city';
-	opt.value = city;
+	opt.name = 'Correctness';
+	opt.value = Correctness;
 	temp1.appendChild(opt);
 
-	var mask = $("input[name='mask']:checked").val();
+	var Speed = $("input[name='Speed']:checked").val();
 	var opt = document.createElement("textarea");
-	opt.name = 'mask';
-	opt.value = mask;
+	opt.name = 'Speed';
+	opt.value = Speed;
 	temp1.appendChild(opt);
 
-	var temp = $("input[name='temp']:checked").val();
+	var Safety = $("input[name='Safety']:checked").val();
 	var opt = document.createElement("textarea");
-	opt.name = 'temp';
-	opt.value = temp;
+	opt.name = 'Safety';
+	opt.value = Safety;
 	temp1.appendChild(opt);
 
-	var hb_go = $("input[name='hb_go']:checked").val();
+	var Response = $("input[name='Response']:checked").val();
 	var opt = document.createElement("textarea");
-	opt.name = 'hb_go';
-	opt.value = hb_go;
+	opt.name = 'Response';
+	opt.value = Response;
 	temp1.appendChild(opt);
 
-	var hb = $("input[name='hb']:checked").val();
+	var Opinion = $('#Opinion').val();
 	var opt = document.createElement("textarea");
-	opt.name = 'hb';
-	opt.value = hb;
+	opt.name = 'Opinion';
+	opt.value = Opinion;
 	temp1.appendChild(opt);
 
-	var hb_touch = $("input[name='hb_touch']:checked").val();
+	var Improvement = $('#Improvement').val();
 	var opt = document.createElement("textarea");
-	opt.name = 'hb_touch';
-	opt.value = hb_touch;
-	temp1.appendChild(opt);
-
-	var remarks = $('#remarks').val();
-	var opt = document.createElement("textarea");
-	opt.name = 'remarks';
-	opt.value = remarks;
-	temp1.appendChild(opt);
-
-	var wz_go = $("input[name='wz_go']:checked").val();
-	var opt = document.createElement("textarea");
-	opt.name = 'wz_go';
-	opt.value = wz_go;
-	temp1.appendChild(opt);
-
-	var wz_touch = $("input[name='wz_touch']:checked").val();
-	var opt = document.createElement("textarea");
-	opt.name = 'wz_touch';
-	opt.value = wz_touch;
-	temp1.appendChild(opt);
-
-	var tz_go = $("input[name='tz_go']:checked").val();
-	var opt = document.createElement("textarea");
-	opt.name = 'tz_go';
-	opt.value = tz_go;
-	temp1.appendChild(opt);
-
-	var tz_touch = $("input[name='tz_touch']:checked").val();
-	var opt = document.createElement("textarea");
-	opt.name = 'tz_touch';
-	opt.value = tz_touch;
-	temp1.appendChild(opt);
-
-	var hz_go = $("input[name='hz_go']:checked").val();
-	var opt = document.createElement("textarea");
-	opt.name = 'hz_go';
-	opt.value = hz_go;
-	temp1.appendChild(opt);
-
-	var hz_touch = $("input[name='hz_touch']:checked").val();
-	var opt = document.createElement("textarea");
-	opt.name = 'hz_touch';
-	opt.value = hz_touch;
+	opt.name = 'Improvement';
+	opt.value = Improvement;
 	temp1.appendChild(opt);
 
 	document.body.appendChild(temp1);

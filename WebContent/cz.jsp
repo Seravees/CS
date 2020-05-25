@@ -12,241 +12,170 @@
 	href="js/easyUIDemo/themes/icon.css"></link>
 <link rel="stylesheet" type="text/css"
 	href="js/easyUIDemo/demo/demo.css"></link>
-<title>人员信息登记</title>
+<title>顾客满意度调查问卷</title>
 </head>
 <body>
 	<div style="text-align: center">
-		<font size="20px" color="red">航港物流防疫调查登记表</font>
+		<font size="20px">苏州工业园区航港物流有限公司</font>
 	</div>
-	<h1></h1>
-
 	<div>
-		<font size="6px">为应对来势汹汹的新型冠状病毒肺炎疫情，航港物流全面贯彻苏州市委、园区管委会和国资的指导文件，根据物流中心疫情防控组要求，航港物流疫情防控工作小组的意见，对于进出人员需要进行实名登记。
-		</font>
+		<br>
 	</div>
-	<h1></h1>
+	<div style="text-align: center">
+		<font size="10px">苏州工业园区航港物流有限公司顾客满意度调查问卷 </font>
+	</div>
+	<div>
+		<br>
+	</div>
+	<div>
+		<font size="6px">尊敬的客户，您好！</font>
+	</div>
+	<div>
+		<font size="6px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp苏州工业园区航港物流有限公司，即苏州物流中心有限公司原业务部，是经海关总署批准的可以开展具有保税港区综合保税功能的海关特殊监管区域经营人。综合保税区将园区现有的几个特殊区域进行“功能整合、政策叠加”，主要目的是为在园区投资的外企和周边地区的企业提供高效、快捷的“一站式”通关和物流服务。</font>
+	</div>
+	<div>
+		<font size="6px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp感谢您对我公司业务一如既往的大力支持！为了了解您的需求和为您提供更优质、更快捷的服务，请对以下调查项目进行评定及提出宝贵意见，在此深表感谢！</font>
+	</div>
 	<div class="easyui-panel" title="">
-		<form action="post" method="post">
+		<form action="QuestionnaireCz" method="post">
 			<div style="margin-bottom: 20px">
 				<div>
-					<font size="5px">1.姓名：</font>
+					<font size="5px">单位名称：</font>
 				</div>
-				<input class="easyui-textbox" name="name"
+				<input class="easyui-textbox" name="Enterprise"
 					style="width: 75%; height: 32px" required>
 
 			</div>
 			<div style="margin-bottom: 20px">
 				<div>
-					<font size="5px">2.身份证号码：</font>
+					<font size="5px">姓名：</font>
 				</div>
-				<input class="easyui-textbox" name="ID"
+				<input class="easyui-textbox" name="Name"
 					style="width: 75%; height: 32px" required>
 			</div>
 			<div style="margin-bottom: 20px">
 				<div>
-					<font size="5px">3.住址(XXX小区XXX幢XXX室)：</font>
+					<font size="5px">联系方式：</font>
 				</div>
-				<input class="easyui-textbox" name="address"
+				<input class="easyui-textbox" name="Tel"
 					style="width: 75%; height: 32px" required>
 			</div>
+			<div></div>
 			<div style="margin-bottom: 20px">
 				<div>
-					<font size="5px">4.联系方式：</font>
+					<font size="5px">1.工作态度（20%）：</font>
 				</div>
-				<input class="easyui-textbox" name="tel"
+				<div>
+					<font size="5px"> <input id="Attitude" type="radio"
+						name="Attitude" class="easyui-validatebox" value="100"><label>100</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size="5px"> <input
+						id="Attitude" type="radio" name="Attitude"
+						class="easyui-validatebox" value="80"><label>80</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font size="5px"> <input
+						id="Attitude" type="radio" name="Attitude"
+						class="easyui-validatebox" value="60"><label>60</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font size="5px"> <input
+						id="Attitude" type="radio" name="Attitude"
+						class="easyui-validatebox" value="40"><label>40</label>
+					</font>
+				</div>
+			</div>
+			<div style="margin-bottom: 20px">
+				<div>
+					<font size="5px">2.单证正确性（20%）：</font>
+				</div>
+				<div>
+					<font size="5px"> <input id="Correctness" type="radio"
+						name="Correctness" class="easyui-validatebox" value="100"><label>100</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size="5px"> <input
+						id="Correctness" type="radio" name="Correctness"
+						class="easyui-validatebox" value="80"><label>80</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font size="5px"> <input
+						id="Correctness" type="radio" name="Correctness"
+						class="easyui-validatebox" value="60"><label>60</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font size="5px"> <input
+						id="Correctness" type="radio" name="Correctness"
+						class="easyui-validatebox" value="40"><label>40</label>
+					</font>
+				</div>
+			</div>
+			<div style="margin-bottom: 20px">
+				<div>
+					<font size="5px">3.业务受理速度（20%）：</font>
+				</div>
+				<div>
+					<font size="5px"> <input id="Speed" type="radio"
+						name="Speed" class="easyui-validatebox" value="100"><label>100</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size="5px"> <input
+						id="Speed" type="radio" name="Speed"
+						class="easyui-validatebox" value="80"><label>80</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font size="5px"> <input
+						id="Speed" type="radio" name="Speed"
+						class="easyui-validatebox" value="60"><label>60</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font size="5px"> <input
+						id="Speed" type="radio" name="Speed"
+						class="easyui-validatebox" value="40"><label>40</label>
+					</font>
+				</div>
+			</div>
+			<div style="margin-bottom: 20px">
+				<div>
+					<font size="5px">4.货物仓储安全性（20%）：</font>
+				</div>
+				<div>
+					<font size="5px"> <input id="Safety" type="radio"
+						name="Safety" class="easyui-validatebox" value="100"><label>100</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size="5px"> <input
+						id="Safety" type="radio" name="Safety"
+						class="easyui-validatebox" value="80"><label>80</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font size="5px"> <input
+						id="Safety" type="radio" name="Safety"
+						class="easyui-validatebox" value="60"><label>60</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font size="5px"> <input
+						id="Safety" type="radio" name="Safety"
+						class="easyui-validatebox" value="40"><label>40</label>
+					</font>
+				</div>
+			</div>
+			<div style="margin-bottom: 20px">
+				<div>
+					<font size="5px">5.咨询及投诉响应速度（20%）：</font>
+				</div>
+				<div>
+					<font size="5px"> <input id="Response" type="radio"
+						name="Response" class="easyui-validatebox" value="100"><label>100</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size="5px"> <input
+						id="Response" type="radio" name="Response"
+						class="easyui-validatebox" value="80"><label>80</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font size="5px"> <input
+						id="Response" type="radio" name="Response"
+						class="easyui-validatebox" value="60"><label>60</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font size="5px"> <input
+						id="Response" type="radio" name="Response"
+						class="easyui-validatebox" value="40"><label>40</label>
+					</font>
+				</div>
+			</div>
+			<div style="margin-bottom: 20px">
+				<div>
+					<font size="5px">提出之意见、要求和建议：</font>
+				</div>
+				<input class="easyui-textbox" name="Opinion"
 					style="width: 75%; height: 32px" required>
+
 			</div>
 			<div style="margin-bottom: 20px">
 				<div>
-					<font size="5px">5.所在城市：</font>
+					<font size="5px">与其他场站（新区、吴中等）比较，您认为我们需要改进的方面：</font>
 				</div>
-				<input class="easyui-textbox" name="city"
+				<input class="easyui-textbox" name="Improvement"
 					style="width: 75%; height: 32px" required>
+
 			</div>
+			
 			<div style="margin-bottom: 20px">
-				<div>
-					<font size="5px">6.是否佩戴口罩：</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="mask" type="radio" name="mask"
-						class="easyui-validatebox" checked="checked" value="是"><label>是</label>
-					</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="mask" type="radio" name="mask"
-						class="easyui-validatebox" value="否"><label>否</label>
-					</font>
-				</div>
-			</div>
-			<div style="margin-bottom: 20px">
-				<div>
-					<font size="5px">7.体温是否正常：</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="temp" type="radio" name="temp"
-						class="easyui-validatebox" checked="checked" value="是"><label>是</label>
-					</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="temp" type="radio" name="temp"
-						class="easyui-validatebox" value="否"><label>否</label>
-					</font>
-				</div>
-			</div>
-			<div style="margin-bottom: 20px">
-				<div>
-					<font size="5px">8.您及您家人三周内是否去过湖北：</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="hb_go" type="radio"
-						name="hb_go" class="easyui-validatebox" checked="checked"
-						value="是"><label>是</label>
-					</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="hb_go" type="radio"
-						name="hb_go" class="easyui-validatebox" value="否"><label>否</label>
-					</font>
-				</div>
-			</div>
-			<div style="margin-bottom: 20px">
-				<div>
-					<font size="5px">9.您或您家人是否为湖北籍：</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="hb" type="radio" name="hb"
-						class="easyui-validatebox" checked="checked" value="是"><label>是</label>
-					</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="hb" type="radio" name="hb"
-						class="easyui-validatebox" value="否"><label>否</label>
-					</font>
-				</div>
-			</div>
-			<div style="margin-bottom: 20px">
-				<div>
-					<font size="5px">10.您或您家人是否密切接触过湖北归来人员：</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="hb_touch" type="radio"
-						name="hb_touch" class="easyui-validatebox" checked="checked"
-						value="是"><label>是</label>
-					</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="hb_touch" type="radio"
-						name="hb_touch" class="easyui-validatebox" value="否"><label>否</label>
-					</font>
-				</div>
-			</div>
-			<div style="margin-bottom: 20px">
-				<div>
-					<font size="5px">11.如有特殊情况请说明（如途径武汉），没有则填无：</font>
-				</div>
-				<input class="easyui-textbox" name="remarks"
-					style="width: 75%; height: 32px" required>
-			</div>
-			<div style="margin-bottom: 20px">
-				<div>
-					<font size="5px">12.三周内是否去过温州：</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="wz_go" type="radio"
-						name="wz_go" class="easyui-validatebox" checked="checked"
-						value="是"><label>是</label>
-					</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="wz_go" type="radio"
-						name="wz_go" class="easyui-validatebox" value="否"><label>否</label>
-					</font>
-				</div>
-			</div>
-			<div style="margin-bottom: 20px">
-				<div>
-					<font size="5px">13.三周内是否与温州人员有接触史：</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="wz_touch" type="radio"
-						name="wz_touch" class="easyui-validatebox" checked="checked"
-						value="是"><label>是</label>
-					</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="wz_touch" type="radio"
-						name="wz_touch" class="easyui-validatebox" value="否"><label>否</label>
-					</font>
-				</div>
-			</div>
-			<div style="margin-bottom: 20px">
-				<div>
-					<font size="5px">14.三周内是否去过台州：</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="tz_go" type="radio"
-						name="tz_go" class="easyui-validatebox" checked="checked"
-						value="是"><label>是</label>
-					</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="tz_go" type="radio"
-						name="tz_go" class="easyui-validatebox" value="否"><label>否</label>
-					</font>
-				</div>
-			</div>
-			<div style="margin-bottom: 20px">
-				<div>
-					<font size="5px">15.三周内是否与台州人员有接触史：</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="tz_touch" type="radio"
-						name="tz_touch" class="easyui-validatebox" checked="checked"
-						value="是"><label>是</label>
-					</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="tz_touch" type="radio"
-						name="tz_touch" class="easyui-validatebox" value="否"><label>否</label>
-					</font>
-				</div>
-			</div>
-			<div style="margin-bottom: 20px">
-				<div>
-					<font size="5px">16.三周内是否去过杭州：</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="hz_go" type="radio"
-						name="hz_go" class="easyui-validatebox" checked="checked"
-						value="是"><label>是</label>
-					</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="hz_go" type="radio"
-						name="hz_go" class="easyui-validatebox" value="否"><label>否</label>
-					</font>
-				</div>
-			</div>
-			<div style="margin-bottom: 20px">
-				<div>
-					<font size="5px">17.三周内是否与杭州人员有接触史：</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="hz_touch" type="radio"
-						name="hz_touch" class="easyui-validatebox" checked="checked"
-						value="是"><label>是</label>
-					</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="hz_touch" type="radio"
-						name="hz_touch" class="easyui-validatebox" value="否"><label>否</label>
-					</font>
-				</div>
-			</div>
-			<div style="margin-bottom: 20px">
-				 <input type="submit" value="提交"
-					class="easyui-linkbutton" iconCls="icon-ok"
-					style="width: 100%; height: 75px">
+				<input type="submit" value="提交" class="easyui-linkbutton"
+					iconCls="icon-ok" style="width: 100%; height: 75px">
 			</div>
 		</form>
 	</div>

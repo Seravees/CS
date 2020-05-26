@@ -31,13 +31,11 @@
 		<font size="6px">尊敬的客户，您好！</font>
 	</div>
 	<div>
-		<font size="6px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp苏州工业园区航港物流有限公司，即苏州物流中心有限公司原业务部，是经海关总署批准的可以开展具有保税港区综合保税功能的海关特殊监管区域经营人。综合保税区将园区现有的几个特殊区域进行“功能整合、政策叠加”，主要目的是为在园区投资的外企和周边地区的企业提供高效、快捷的“一站式”通关和物流服务。</font>
+		<font size="6px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp为了了解您的需求和为您提供更优质、更快捷的服务，请对以下调查项目进行评定及提出宝贵意见，在此深表感谢!</font>
 	</div>
-	<div>
-		<font size="6px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp感谢您对我公司业务一如既往的大力支持！为了了解您的需求和为您提供更优质、更快捷的服务，请对以下调查项目进行评定及提出宝贵意见，在此深表感谢！</font>
-	</div>
+	<div></div>
 	<div class="easyui-panel" title="">
-		<form action="QuestionnaireCz" method="post">
+		<form action="QuestionnaireWz" method="post">
 			<div style="margin-bottom: 20px">
 				<div>
 					<font size="5px">单位名称：</font>
@@ -83,27 +81,7 @@
 			</div>
 			<div style="margin-bottom: 20px">
 				<div>
-					<font size="5px">2.单证正确性（20%）：</font>
-				</div>
-				<div>
-					<font size="5px"> <input id="Correctness" type="radio"
-						name="Correctness" class="easyui-validatebox" value="100"
-						checked="checked"><label>100</label>
-					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size="5px"> <input
-						id="Correctness" type="radio" name="Correctness"
-						class="easyui-validatebox" value="80"><label>80</label>
-					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font size="5px"> <input
-						id="Correctness" type="radio" name="Correctness"
-						class="easyui-validatebox" value="60"><label>60</label>
-					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font size="5px"> <input
-						id="Correctness" type="radio" name="Correctness"
-						class="easyui-validatebox" value="40"><label>40</label>
-					</font>
-				</div>
-			</div>
-			<div style="margin-bottom: 20px">
-				<div>
-					<font size="5px">3.业务受理速度（20%）：</font>
+					<font size="5px">2.文案提供速度（20%）：</font>
 				</div>
 				<div>
 					<font size="5px"> <input id="Speed" type="radio"
@@ -123,27 +101,47 @@
 			</div>
 			<div style="margin-bottom: 20px">
 				<div>
-					<font size="5px">4.货物仓储安全性（20%）：</font>
+					<font size="5px">3.文案提供质量（20%）：</font>
 				</div>
 				<div>
-					<font size="5px"> <input id="Safety" type="radio"
-						name="Safety" class="easyui-validatebox" value="100"
+					<font size="5px"> <input id="Quality" type="radio"
+						name="Quality" class="easyui-validatebox" value="100"
 						checked="checked"><label>100</label>
 					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size="5px"> <input
-						id="Safety" type="radio" name="Safety" class="easyui-validatebox"
-						value="80"><label>80</label>
+						id="Quality" type="radio" name="Quality"
+						class="easyui-validatebox" value="80"><label>80</label>
 					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font size="5px"> <input
-						id="Safety" type="radio" name="Safety" class="easyui-validatebox"
-						value="60"><label>60</label>
+						id="Quality" type="radio" name="Quality"
+						class="easyui-validatebox" value="60"><label>60</label>
 					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font size="5px"> <input
-						id="Safety" type="radio" name="Safety" class="easyui-validatebox"
-						value="40"><label>40</label>
+						id="Quality" type="radio" name="Quality"
+						class="easyui-validatebox" value="40"><label>40</label>
 					</font>
 				</div>
 			</div>
 			<div style="margin-bottom: 20px">
 				<div>
-					<font size="5px">5.咨询及投诉响应速度（20%）：</font>
+					<font size="5px">4.团队沟通合作（20%）：</font>
+				</div>
+				<div>
+					<font size="5px"> <input id="Communication" type="radio"
+						name="Communication" class="easyui-validatebox" value="100"
+						checked="checked"><label>100</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size="5px"> <input
+						id="Communication" type="radio" name="Communication"
+						class="easyui-validatebox" value="80"><label>80</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font size="5px"> <input
+						id="Communication" type="radio" name="Communication"
+						class="easyui-validatebox" value="60"><label>60</label>
+					</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font size="5px"> <input
+						id="Communication" type="radio" name="Communication"
+						class="easyui-validatebox" value="40"><label>40</label>
+					</font>
+				</div>
+			</div>
+			<div style="margin-bottom: 20px">
+				<div>
+					<font size="5px">5.咨询响应速度（20%）：</font>
 				</div>
 				<div>
 					<font size="5px"> <input id="Response" type="radio"
@@ -169,14 +167,7 @@
 					style="width: 75%; height: 32px" required>
 
 			</div>
-			<div style="margin-bottom: 20px">
-				<div>
-					<font size="5px">与其他场站（新区、吴中等）比较，您认为我们需要改进的方面：</font>
-				</div>
-				<input class="easyui-textbox" name="Improvement"
-					style="width: 75%; height: 32px" required>
 
-			</div>
 
 			<div style="margin-bottom: 20px">
 				<input type="submit" value="提交" class="easyui-linkbutton"
